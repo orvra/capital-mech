@@ -1,0 +1,127 @@
+:root {
+  font-family: "Montserrat Variable", Inter, system-ui, Avenir, "Roboto Flex Variable";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: black;
+  background-color: rgb(255, 255, 255);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --ivory-color: #FAF9F6;
+  --gray-color: #242424;
+  --primary-color: #243763;
+  --secondary-color: #FF6E31;
+  --third-color: #FFEBB7;
+  --fourth-color: #AD8E70
+  
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: rgb(148, 148, 148);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+nav{
+  background-color: var(--gray-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.orange{
+  color: var(--secondary-color);
+}
+.white-yellow{
+  color: var(--third-color);
+}
+.navy{
+  color: var(--primary-color);
+}
+.gray-bg{
+  background-color: var(--gray-color);
+}
+
+.white-yellow-bg{
+  background-color: var(--third-color);
+}
+
+.orange-bg{
+  background-color: var(--secondary-color);
+}
+
+.brown-bg{
+  background-color: var(--fourth-color);
+}
+
+.brawn{
+  color: var(--fourth-color);
+}
+
+.groy{
+  color: var(--gray-color);
+}
+
+.ivory-bg{
+  background-color: var(--ivory-color);
+}
+
+.roboto-font{
+  font-family: 'Roboto Flex Variable';
+}
+
+.primary-font{
+  font-family: "Montserrat Variable";
+}
+.map-container{
+  height: 100%;
+  width: 100%;
+}
+
+.map{
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.new-line{
+  white-space: pre-line;
+}
+.gm-style-iw button[title="Close"]:focus {
+  outline: none;
+}
+
+.active{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+
+}
