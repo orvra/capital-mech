@@ -6,10 +6,11 @@ import "@fontsource-variable/montserrat";
 import "@fontsource-variable/roboto-flex";
 import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename="/capital-mech">
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
