@@ -14,7 +14,7 @@ function Home() {
       <div className="relative h-[500px] w-full md:h-[650px] xl:h-[800px]">
         <img
           className="w-full h-full object-cover object-bottom"
-          src="/capital-mech/images/hero/bmw_hero2.jpg"
+          src="/capital-mech/images/hero/BMW_hero2.jpg"
         />
         <div className="absolute z-[5] inset-0 h-full">
           <div className="max-w-[1400px] h-full mx-auto text-slate-50 flex flex-col justify-center space-y-6 px-4 min-[1400px]:px-0">
