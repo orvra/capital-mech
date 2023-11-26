@@ -13,7 +13,9 @@ function ServiceCard({ src, icon, title, para }) {
           </h2>
         </div>
         <p className="text-xs roboto-font">{para}</p>
-        <Link to={`/repair-services/${title.replace(/\s+/g, "-")}`}>
+        <Link
+          to={`/repair-services/${title.replace(/\s+/g, "-").toLowerCase()}`}
+        >
           <h3 className="group groy pt-4 font-medium cursor-pointer underline-offset-8 hover:underline">
             VIEW MORE
           </h3>

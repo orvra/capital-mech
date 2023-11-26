@@ -10,14 +10,36 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="space-y-6">
-      <WelcomeHero />
+      {/* <WelcomeHero />*/}
+      <div className="relative h-[500px] w-full md:h-[650px] xl:h-[800px]">
+        <img
+          className="w-full h-full object-cover object-bottom"
+          src="/images/hero/bmw_hero2.jpg"
+        />
+        <div className="absolute z-[5] inset-0 h-full">
+          <div className="max-w-[1400px] h-full mx-auto text-slate-50 flex flex-col justify-center space-y-6 px-4 min-[1400px]:px-0">
+            <h1 className="font-bold tracking-tighter shadow-lg xl:text-[80px]">
+              Ottawa's First Premium Auto Shop
+            </h1>
+            <h2 className="font-semibold tracking-tight roboto-font shadow-lg xl:text-2xl">
+              Crafted for excellence. We offer a full range of repair services,
+              a custom auto shop, and a luxury car wash.
+            </h2>
+          </div>
+        </div>
+
+        <div className="absolute inset-0 bg-neutral-950 opacity-[50%]"></div>
+      </div>
       <div className="relative max-w-[1400px] mx-auto z-20">
         <WelcomeHeroCards />
         <TitleHeader
           title="CAPITAL MECH AUTO SERVICES"
-          styling="px-4 pt-6 md:pb-2 md:pt-[220px] md:px-0"
+          styling="px-4 pt-6 md:pb-2 md:pt-[170px] md:px-0"
         />
-        <AutoServices />
+        <div className="px-2 xxs:px-4 min-[1400px]:px-0">
+          <AutoServices />
+        </div>
+
         <TitleHeader title="SPECIAL OFFERS" styling="md:py-2" />
         <TireOffer />
         <div className="w-full flex flex-col items-center px-2 xxs:px-4 min-[1400px]:px-0 lg:space-x-4 lg:flex-row">
@@ -40,7 +62,7 @@ function Home() {
         </div>
         <div className="flex justify-center my-12">
           <Link to="/promotions">
-            <button className="gray-bg text-white font-semibold py-2 px-12 border border-gray-400 rounded-sm shadow-md hover:bg-black">
+            <button className="gray-bg text-white font-semibold py-2 px-12 border border-gray-400 rounded shadow-md hover:bg-black">
               SEE ALL OFFERS
             </button>
           </Link>

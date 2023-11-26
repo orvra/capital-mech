@@ -24,7 +24,7 @@ function CustomAutoShop() {
         </motion.div>
         <motion.div
           className="absolute z-[2]"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0.6 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 0.5, ease: "easeIn" }}
         >

@@ -27,8 +27,7 @@
 @tailwind utilities;
 
 a {
-  font-weight: 500;
-  color: white;
+ 
   text-decoration: inherit;
 }
 a:hover {
@@ -124,4 +123,8 @@ button {
   text-decoration: underline;
   text-underline-offset: 8px;
 
+}
+
+.pos{
+  object-position: bottom 10px;
 }

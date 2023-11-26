@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
-import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import Locations from "./pages/Locations";
 import MenuOverlay from "./components/MenuOverlay";
@@ -13,6 +19,7 @@ import RepairService from "./pages/RepairService";
 import BookAppointment from "./pages/BookAppointment";
 import locations from "./components/locations";
 import ChangeLocationModal from "./components/ChangeLocationModal";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [displayMenu, setDisplayMenu] = useState(false);
@@ -64,10 +71,19 @@ function App() {
     }
   }
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
-      <Navbar handleMenuClick={handleMenuClick} {...location} />
-      {displayMenu && <MenuOverlay handleMenuClose={handleMenuClose} />}
+      {location && <Navbar handleMenuClick={handleMenuClick} {...location} />}
+
+      <AnimatePresence>
+        {displayMenu && <MenuOverlay handleMenuClose={handleMenuClose} />}
+      </AnimatePresence>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -76,7 +92,7 @@ function App() {
             location ? ( // Check if location is defined
               <Locations
                 handleLocationChange={handleLocationChange}
-                currentLocation={location.index}
+                {...location}
                 handleBookAppointment={handleBookAppointment}
               />
             ) : null

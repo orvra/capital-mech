@@ -15,7 +15,7 @@ function ChangeLocationModal({
     navigate("/book-appointment");
   }
   return (
-    <div className="fixed inset-0 z-[50] w-full h-full flex justify-center items-center">
+    <div className="fixed inset-0 z-[125] w-full h-full flex justify-center items-center">
       {/* Black overlay with transparency */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 

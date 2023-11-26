@@ -40,7 +40,9 @@ function RepairService() {
   };
   const { service } = useParams();
   const repairService = service.replace(/-/g, " ");
-  const svc = repairServices.find((serv) => serv.title === repairService);
+  const svc = repairServices.find(
+    (serv) => serv.title.toLowerCase() === repairService
+  );
   return (
     <div>
       <HeaderHero
