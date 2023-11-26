@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/capital-underground">
+    <BrowserRouter basename="/capital-mech">
       <App />
     </BrowserRouter>
   </React.StrictMode>
