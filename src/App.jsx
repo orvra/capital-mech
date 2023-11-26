@@ -86,6 +86,7 @@ function App() {
       </AnimatePresence>
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route
           path="/locations"
           element={
