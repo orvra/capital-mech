@@ -85,7 +85,7 @@ function App() {
         {displayMenu && <MenuOverlay handleMenuClose={handleMenuClose} />}
       </AnimatePresence>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
         <Route
           path="/locations"
           element={
