@@ -1,5 +1,9 @@
 import { FaRegCalendarAlt } from "react-icons/fa";
-import { MdOutlineLocalOffer, MdOutlineReviews } from "react-icons/md";
+import {
+  MdOutlineLocalOffer,
+  MdOutlineReviews,
+  MdOutlineLocationOn,
+} from "react-icons/md";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -18,6 +22,19 @@ function WelcomeHeroCards() {
           <p className="orange">APPOINTMENT</p>
         </div>
       </Link>
+
+      <Link
+        to="/locations"
+        className="flex flex-col space-y-7 py-7 shadow-md rounded-md w-full justify-center items-center text-center gray-bg border-b-[10px] border-b-[#FF6E31] cursor-pointer md:hover:-translate-y-3"
+      >
+        <div className="text-4xl groy rounded-full p-5 white-yellow-bg">
+          <MdOutlineLocationOn />
+        </div>
+        <div className="space-y-2 text-2xl font-semibold white-yellow">
+          <p>FIND YOUR LOCAL </p>
+          <p className="orange">MECHANIC</p>
+        </div>
+      </Link>
       <Link
         to="/promotions"
         className="flex flex-col space-y-7 py-7 shadow-md rounded-md w-full justify-center items-center text-center gray-bg border-b-[10px] border-b-[#FF6E31] cursor-pointer md:hover:-translate-y-3"
@@ -28,15 +45,6 @@ function WelcomeHeroCards() {
         <div className="space-y-2 text-2xl font-semibold white-yellow">
           <p>CHECK OUR</p>
           <p className="orange">SPECIAL OFFERS</p>
-        </div>
-      </Link>
-      <Link className="flex flex-col space-y-7 py-7 shadow-md rounded-md w-full justify-center items-center text-center gray-bg border-b-[10px] border-b-[#FF6E31] cursor-pointer md:hover:-translate-y-3">
-        <div className="text-4xl groy rounded-full p-5 white-yellow-bg">
-          <MdOutlineReviews />
-        </div>
-        <div className="space-y-2 text-2xl font-semibold white-yellow">
-          <p>SEE OUR</p>
-          <p className="orange">CUSTOMER REVIEWS</p>
         </div>
       </Link>
     </div>

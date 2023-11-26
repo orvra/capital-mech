@@ -17,6 +17,7 @@ function BookAppointment({ ...location }) {
   //Variable set up for AppointStep1 component
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
+  const [isError, setIsError] = useState(false);
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
@@ -51,17 +52,23 @@ function BookAppointment({ ...location }) {
   //Button disable logic
   useEffect(() => {
     isButtonDisabled();
-    console.log(selectedDate, "yamcha", selectedTime);
+    //console.log(selectedDate, "yamcha", selectedTime);
   }, [
     selectedDate,
     selectedTime,
     serviceSelected,
     radioButtonValue,
     currentStep,
+    isError,
   ]);
 
   const isButtonDisabled = () => {
-    if (currentStep === 1 && selectedDate !== null && selectedTime !== null) {
+    if (
+      currentStep === 1 &&
+      selectedDate !== null &&
+      selectedTime !== null &&
+      !isError
+    ) {
       setButtonDisable(false);
     } else if (
       currentStep === 2 &&
@@ -151,6 +158,7 @@ function BookAppointment({ ...location }) {
               selectedDate={selectedDate}
               handleTimeChange={handleTimeChange}
               selectedTime={selectedTime}
+              setIsError={setIsError}
             />
           ) : currentStep === 2 ? (
             <AppointmentStep2
