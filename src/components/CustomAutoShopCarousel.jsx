@@ -5,59 +5,59 @@ function CustomAutoShopCarousel() {
   var items = [
     {
       name: "Mercedez Benz Car",
-      src: "/images/custom auto shop/carousel/benz.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/benz.jpg",
     },
     {
       name: "Mercedez Benz SUV",
-      src: "/images/custom auto shop/carousel/benz_jeep.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/benz_jeep.jpg",
     },
     {
       name: "Classic Red Car",
-      src: "/images/custom auto shop/carousel/classic_red_car.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/classic_red_car.jpg",
     },
     {
       name: "Black Ferrari",
-      src: "/images/custom auto shop/carousel/ferrari_black.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/ferrari_black.jpg",
     },
     {
       name: "Ferrari Red Interior",
-      src: "/images/custom auto shop/carousel/ferrari_fabric.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/ferrari_fabric.jpg",
     },
     {
       name: "Orange Lambo",
-      src: "/images/custom auto shop/carousel/garage_cars.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/garage_cars.jpg",
     },
     {
       name: "Green Lambo",
-      src: "/images/custom auto shop/carousel/green_lambo.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/green_lambo.jpg",
     },
     {
       name: "McLaren",
-      src: "/images/custom auto shop/carousel/MCLAREN.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/MCLAREN.jpg",
     },
     {
       name: "Orange Corvette",
-      src: "/images/custom auto shop/carousel/orange_corvette.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/orange_corvette.jpg",
     },
     {
       name: "Honda Prelude",
-      src: "/images/custom auto shop/carousel/prelude.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/prelude.jpg",
     },
     {
       name: "Classic Red Aston",
-      src: "/images/custom auto shop/carousel/red_classic.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/red_classic.jpg",
     },
     {
       name: "Purple BMW",
-      src: "/images/custom auto shop/carousel/spider.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/spider.jpg",
     },
     {
       name: "Classic Sunfire",
-      src: "/images/custom auto shop/carousel/sunfire.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/sunfire.jpg",
     },
     {
       name: "Custom Toyota",
-      src: "/images/custom auto shop/carousel/toyota_white.jpg",
+      src: "capital-mech/images/custom auto shop/carousel/toyota_white.jpg",
     },
   ];
 

@@ -46,7 +46,7 @@ function RepairService() {
   return (
     <div>
       <HeaderHero
-        src="/images/hero/BMW_engine.jpg"
+        src="capital-mech/images/hero/BMW_engine.jpg"
         title={repairService.toUpperCase()}
       />
       <div className="max-w-[1200px] mx-auto">

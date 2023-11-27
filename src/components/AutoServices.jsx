@@ -34,7 +34,7 @@ function AutoServices() {
         </div>
 
         <img
-          src="/images/hero/lift.jpg"
+          src="capital-mech/images/hero/lift.jpg"
           className="w-full object-cover lg:w-1/3"
         />
       </div>
@@ -69,7 +69,7 @@ function AutoServices() {
         </div>
 
         <img
-          src="/images/hero/prelude.jpg"
+          src="capital-mech/images/hero/prelude.jpg"
           className="w-full object-cover h-full lg:w-1/3"
         />
       </div>
@@ -103,7 +103,7 @@ function AutoServices() {
         </div>
 
         <img
-          src="/images/hero/polish.jpg"
+          src="capital-mech/images/hero/polish.jpg"
           className="w-full object-cover h-full lg:w-1/3"
         />
       </div>

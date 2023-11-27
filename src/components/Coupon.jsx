@@ -39,7 +39,7 @@ function Coupon({ amount, upTo, off, item, para }) {
           <div className="flex py-2 text-white text-[7px] space-x-3.5 items-center min-[325px]:text-[7px] min-[400px]:text-[9px] min-[400px]:h-1/2 min-[400px]:pt-9 min-[450px]:pt-4  min-[450px]:space-x-4 min-[450px]:text-[10px] min-[600px]:text-[xs] ">
             <p className="">{para}</p>
             <img
-              src="/images/logo/CAPITALMECH6.png"
+              src="capital-mech/images/logo/CAPITALMECH6.png"
               className="h-3 min-[400px]:h-5 min-[450px]:h-6 min-[600px]:h-10"
             />
           </div>

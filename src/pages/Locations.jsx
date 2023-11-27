@@ -36,7 +36,10 @@ function Locations({
 
   return (
     <div>
-      <HeaderHero src="/images/hero/hyundai_lift.jpg" title="LOCATIONS" />
+      <HeaderHero
+        src="capital-mech/images/hero/hyundai_lift.jpg"
+        title="LOCATIONS"
+      />
       {isLoaded && <SearchBar setCoordinates={setCoordinates} />}
       <div className="max-w-[1400px] mx-auto md:flex md:flex-row-reverse">
         {!isLoaded ? <h1>Loading...</h1> : <Map />}

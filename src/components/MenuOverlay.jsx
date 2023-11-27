@@ -25,7 +25,7 @@ function MenuOverlay({ handleMenuClose }) {
           </div>
           <div className="pt-[52px] text-white xs:pt-12 space-y-10">
             <div className="mx-auto w-48 xs:w-64">
-              <img src="/images/logo/CAPITALMECH6.png" />
+              <img src="capital-mech/images/logo/CAPITALMECH6.png" />
             </div>
             <div className="text-xl xs:text-2xl pt-5">
               <NavLink onClick={handleMenuClose} to="/">

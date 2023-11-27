@@ -6,7 +6,10 @@ import RepairServicesSection from "../components/RepairServicesSection";
 function Services() {
   return (
     <div className="">
-      <HeaderHero src="/images/hero/BMW_engine.jpg" title="REPAIR SERVICES" />
+      <HeaderHero
+        src="capital-mech/images/hero/BMW_engine.jpg"
+        title="REPAIR SERVICES"
+      />
       <div className="relative max-w-[1400px] mx-auto">
         <TitleHeader
           title={"Vehicle Repair & Maintenance".toUpperCase()}
