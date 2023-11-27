@@ -37,7 +37,7 @@ function Locations({
   return (
     <div>
       <HeaderHero
-        src="capital-mech/images/hero/hyundai_lift.jpg"
+        src="/capital-mech/images/hero/hyundai_lift.jpg"
         title="LOCATIONS"
       />
       {isLoaded && <SearchBar setCoordinates={setCoordinates} />}

@@ -84,7 +84,7 @@ function BookAppointment({ ...location }) {
   return (
     <div>
       <HeaderHero
-        src="capital-mech/images/hero/appointment_hero.jpg"
+        src="/capital-mech/images/hero/appointment_hero.jpg"
         title="Need an appointment? We got you covered."
       />
       <div className="max-w-[1400px] mx-auto px-4 min-[1400px]:px-0">

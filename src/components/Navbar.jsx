@@ -30,7 +30,7 @@ function Navbar({ handleMenuClick, ...location }) {
           </div>
           <Link to="/">
             <img
-              src="capital-mech/images/logo/CAPITALMECH6.png"
+              src="/capital-mech/images/logo/CAPITALMECH6.png"
               className="pt-2 w-44 xl:w-64 xl:pt-4"
             />
           </Link>

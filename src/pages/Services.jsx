@@ -7,7 +7,7 @@ function Services() {
   return (
     <div className="">
       <HeaderHero
-        src="capital-mech/images/hero/BMW_engine.jpg"
+        src="/capital-mech/images/hero/BMW_engine.jpg"
         title="REPAIR SERVICES"
       />
       <div className="relative max-w-[1400px] mx-auto">

@@ -8,7 +8,7 @@ function WelcomeHero() {
       name: "Ottawa's first premium auto repair shop",
       description:
         "We take pride in our top notch auto repair services. We take in high end vehicles and classic cars and offer high-end customization.",
-      src: "capital-mech/images/hero/BMW.jpg",
+      src: "/capital-mech/images/hero/BMW.jpg",
       button: "Find your shop",
       opacity: 70,
     },
@@ -17,7 +17,7 @@ function WelcomeHero() {
       description:
         "From routine oil changes to comprehensive auto repairs, we've got your vehicle covered",
       button: "View services",
-      src: "capital-mech/images/hero/garage_repairs.jpg",
+      src: "/capital-mech/images/hero/garage_repairs.jpg",
       opacity: 20,
     },
     {
@@ -25,7 +25,7 @@ function WelcomeHero() {
       description:
         "Every vehicle serviced at our shop includes a complimentary car wash that leaves your car radiant",
       button: "Learn more",
-      src: "capital-mech/images/hero/bentley_car_wash.jpg",
+      src: "/capital-mech/images/hero/bentley_car_wash.jpg",
       opacity: 70,
     },
     {
@@ -33,7 +33,7 @@ function WelcomeHero() {
       description:
         "Revive your vintage ride with the expertise of our highly specialized team",
       button: "Discover more",
-      src: "capital-mech/images/hero/classic_reveal.jpg",
+      src: "/capital-mech/images/hero/classic_reveal.jpg",
       opacity: 20,
     },
   ];
