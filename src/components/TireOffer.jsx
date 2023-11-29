@@ -21,28 +21,28 @@ function TireOffer() {
             <div className="space-y-4 lg:flex lg:flex-col">
               <img
                 className="h-36 object-contain translate-x-[62px] lg:translate-x-0"
-                src="images/hero/tire_rotate3.png"
+                src="/capital-mech/images/hero/tire_rotate3.png"
               />
               <h2>Free tire rotation every 5000KM</h2>
             </div>
             <div className="space-y-4 lg:flex lg:flex-col lg:justify-center">
               <img
                 className="h-36 object-contain translate-x-[62px] lg:translate-x-0"
-                src="images/hero/tire_balance3.png"
+                src="/capital-mech/images/hero/tire_balance3.png"
               />
               <h2>Free rebalance every 5000KM</h2>
             </div>
             <div className="space-y-4 lg:flex lg:flex-col">
               <img
                 className="h-32 object-contain translate-x-[90px] lg:translate-x-0"
-                src="images/hero/tire_repair3.png"
+                src="/capital-mech/images/hero/tire_repair3.png"
               />
               <h2>Free one time tire repair</h2>
             </div>
             <div className="space-y-4 lg:flex lg:flex-col">
               <img
                 className="h-40 object-contain translate-x-14 lg:translate-x-0"
-                src="images/hero/tire_pressure3.png"
+                src="/capital-mech/images/hero/tire_pressure3.png"
               />
               <h2>Free air pressure checks</h2>
             </div>
@@ -54,7 +54,7 @@ function TireOffer() {
         </p>
         <div className="flex justify-center mx-auto w-full pt-0 md:w-[70%]">
           <img
-            src="images/hero/tires3.png"
+            src="/capital-mech/images/hero/tires3.png"
             className="w-full object-cover translate-y-16 lg:translate-y-24"
           />
         </div>

@@ -42,7 +42,7 @@ function Locations({
       />
       {isLoaded && <SearchBar setCoordinates={setCoordinates} />}
       <div className="max-w-[1400px] mx-auto md:flex md:flex-row-reverse">
-        {!isLoaded ? <h1>Loading...</h1> : <Map />}
+        {!isLoaded ? <h1>Loading...</h1> : <Map coordinates={coordinates} />}
 
         <div className="overflow-y-auto md:h-[700px] md:w-1/3 lg:w-1/3">
           <LocationsList

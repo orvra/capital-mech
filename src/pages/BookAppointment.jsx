@@ -93,13 +93,17 @@ function BookAppointment({ ...location }) {
           <p className="new-line text-gray-500">{location.address}</p>
           <div className="flex items-center space-x-2">
             <BiSolidPhoneCall className="groy text-2xl" />
-            <h3 className="groy text-lg font-medium">{location.number}</h3>
+            <h3 className="groy text-lg font-medium">
+              <a href={`tel:${location.number}`}>{location.number}</a>
+            </h3>
           </div>
           <div className="flex items-center space-x-2">
             <IoMdMail className="groy text-2xl" />
-            <h3 className="groy text-lg font-medium">{location.email}</h3>
+            <h3 className="groy text-lg font-medium">
+              <a href={`mailto:${location.email}`}>{location.email}</a>
+            </h3>
           </div>
-          <div className="grid grid-cols-3 w-[470px] text-gray-500">
+          <div className="grid grid-cols-2 min-[470px]:w-[470px] min-[470px]:grid-cols-3 text-gray-500">
             <p>Monday</p>
             <p>08:00 AM - 06:00 PM</p>
             <p className="row-start-2">Tuesday</p>

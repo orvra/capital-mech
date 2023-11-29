@@ -8,7 +8,7 @@ import { useMemo } from "react";
 import React, { useState } from "react";
 import locations from "./locations";
 
-function Map() {
+function Map({ coordinates }) {
   /*const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_PUBLIC_GOOGLE_API_KEY,
   });*/

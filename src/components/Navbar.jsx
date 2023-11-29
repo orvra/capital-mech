@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { IoMdMail } from "react-icons/io";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 function Navbar({ handleMenuClick, ...location }) {
   const [popupEnabled, setPopupEnabled] = useState(false);
@@ -74,6 +75,12 @@ function Navbar({ handleMenuClick, ...location }) {
                     exit={{ opacity: 0 }}
                     className="absolute right-0 z-[50] w-[300px] xxs:w-[375px] bg-white pb-4 shadow rounded"
                   >
+                    <button
+                      onClick={() => setPopupEnabled(false)}
+                      className="absolute z-[100] top-0 right-2 py-2 text-2xl bg-white"
+                    >
+                      <AiOutlineCloseCircle className="text-gray-500 hover:text-black" />
+                    </button>
                     <h2 className="orange text-lg font-semibold pt-6 pb-1 bg-navy px-4">
                       {location.title}
                     </h2>
@@ -81,11 +88,13 @@ function Navbar({ handleMenuClick, ...location }) {
                       <p className="new-line">{location.address}</p>
                       <div className="flex space-x-2 items-center">
                         <BiSolidPhoneCall />
-                        <p>{location.number}</p>
+                        <a href={`tel:${location.number}`}>{location.number}</a>
                       </div>
                       <div className="flex space-x-2 items-center">
                         <IoMdMail />
-                        <p>{location.email}</p>
+                        <a href={`mailto:${location.email}`}>
+                          {location.email}
+                        </a>
                       </div>
                       <div className="grid grid-cols-3 w-full text-gray-500">
                         <p>Monday</p>
