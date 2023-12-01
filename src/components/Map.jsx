@@ -5,7 +5,7 @@ import {
   InfoWindowF,
 } from "@react-google-maps/api";
 import { useMemo } from "react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import locations from "./locations";
 
 function Map({ coordinates }) {
@@ -18,8 +18,11 @@ function Map({ coordinates }) {
 
   const handleMarkerClick = (id, address) => {
     setInfoWindowData({ id, address });
+
     setIsOpen(true);
   };
+
+  const [map, setMap] = useState(/** @type google.maps.Map */ (null));
 
   return (
     <div className="map max-w-[1400px] mx-auto">
@@ -28,8 +31,8 @@ function Map({ coordinates }) {
       ) : (*/}
       <GoogleMap
         mapContainerClassName="map-container"
-        center={{ lat: 45.4, lng: -75.69 }}
-        zoom={12}
+        center={{ lat: 44.53, lng: -77.49 }}
+        zoom={6}
         options={{ mapId: "96eeec0a916300a8" }}
       >
         {locations.map(({ lat, lng, address, index, title, number }, i) => (

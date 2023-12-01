@@ -3,7 +3,7 @@ import HeaderHero from "../components/HeaderHero";
 import Map from "../components/Map";
 import LocationsList from "../components/LocationsList";
 import SearchBar from "../components/SearchBar";
-import { useLoadScript } from "@react-google-maps/api";
+import { useLoadScript, useJsApiLoader } from "@react-google-maps/api";
 import {
   getDistanceFromLatLonInKm,
   sortLocationsByProximity,
@@ -17,7 +17,7 @@ function Locations({
   handleBookAppointment,
   ...location
 }) {
-  const { isLoaded } = useLoadScript({
+  const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: import.meta.env.VITE_PUBLIC_GOOGLE_API_KEY,
     libraries,
   });
@@ -32,7 +32,7 @@ function Locations({
     // Sort locations by proximity when coordinates change
     const sortedLocations = sortLocationsByProximity(locationList, coordinates);
     setLocationList(sortedLocations);
-  }, [coordinates]); // Run when coordinates change
+  }, [coordinates[0]]); // Run when coordinates change
 
   return (
     <div>
@@ -42,7 +42,7 @@ function Locations({
       />
       {isLoaded && <SearchBar setCoordinates={setCoordinates} />}
       <div className="max-w-[1400px] mx-auto md:flex md:flex-row-reverse">
-        {!isLoaded ? <h1>Loading...</h1> : <Map coordinates={coordinates} />}
+        {!isLoaded ? <h1>Loading...</h1> : <Map coordinates={coordinates[0]} />}
 
         <div className="overflow-y-auto md:h-[700px] md:w-1/3 lg:w-1/3">
           <LocationsList

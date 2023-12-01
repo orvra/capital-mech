@@ -1,7 +1,7 @@
 const repairServices = [
     {
       id: 1,
-      src: "/images/services/oil_change.jpg",
+      src: "/capital-mech/images/services/oil_change.jpg",
       title: "Oil Change",
       icon: "ImDroplet",
       para: "Regularly changing your vehicle's oil is crucial for its performance and longevity. Our professional oil change service ensures that your engine stays clean and properly lubricated, preventing unnecessary wear and tear. We use premium synthetic oils that meet the highest industry standards, providing superior protection and enhancing fuel efficiency. Our certified technicians perform a thorough inspection of your vehicle's fluid levels and filters, ensuring that everything is in optimal condition. With our oil change service, you can enjoy peace of mind, knowing that your engine is well taken care of.",
@@ -12,7 +12,7 @@ const repairServices = [
     },
     {
       id: 2,
-      src: "/images/services/brake_repair.jpg",
+      src: "/capital-mech/images/services/brake_repair.jpg",
       title: "Brake Repair",
       icon: "IoAlertCircleSharp",
       para: "Regular maintenance of your vehicle's braking system is crucial to ensure safety on the road. Our professional brake repair service covers everything from brake pad replacement to rotor resurfacing. We use high-quality brake components to guarantee optimal performance and stopping power. Whether you hear squeaking or experience reduced braking efficiency, our certified technicians will diagnose and fix the issue, so you can drive with confidence.",
@@ -23,7 +23,7 @@ const repairServices = [
     },
     {
       id: 3,
-      src: "/images/services/exhaust.jpg",
+      src: "/capital-mech/images/services/exhaust.jpg",
       title: "Exhaust System Repair",
       icon: "IoCloud",
       para: "Your vehicle's exhaust system plays a vital role in reducing harmful emissions and maintaining engine performance. Our exhaust system repair service covers everything from muffler replacement to exhaust pipe repair. Our certified technicians will diagnose and address issues like excessive noise or increased emissions to keep your vehicle running smoothly.",
@@ -34,7 +34,7 @@ const repairServices = [
     },
     {
       id: 4,
-      src: "/images/services/shocks.jpg",
+      src: "/capital-mech/images/services/shocks.jpg",
       title: "Suspension Repair",
       icon: "GiSpring",
       para: "A properly functioning suspension system is essential for a smooth and comfortable ride. Our suspension repair service covers shock absorber replacement, strut repair, and more. Whether you experience a bumpy ride or notice uneven tire wear, our expert technicians will diagnose and fix suspension issues to enhance your driving experience.",
@@ -45,7 +45,7 @@ const repairServices = [
     },
     {
       id: 5,
-      src: "/images/services/tire_change.jpg",
+      src: "/capital-mech/images/services/tire_change.jpg",
       title: "Tire Services",
       icon: "GiCarWheel",
       para: "Maintaining your vehicle's tires is essential for safety and optimal performance. Our tire services cover tire rotation, balancing, and replacement. Whether you need new tires or routine maintenance, our certified technicians will ensure your tires are in top condition, providing you with a smooth and safe ride.",
@@ -56,7 +56,7 @@ const repairServices = [
     },
     {
       id: 6,
-      src: "/images/services/electric_car.jpg",
+      src: "/capital-mech/images/services/electric_car.jpg",
       title: "Electric Vehicle Support",
       icon: "GiElectric",
       para: "As the popularity of electric vehicles (EVs) grows, we offer comprehensive support for EV owners. Our electric vehicle support includes charging station installation, battery maintenance, and diagnostics. Whether you drive a fully electric or hybrid vehicle, our experts have the knowledge to keep your EV running smoothly.",
@@ -67,7 +67,7 @@ const repairServices = [
     },
     {
       id: 7,
-      src: "/images/services/maintenance_package.jpg",
+      src: "/capital-mech/images/services/maintenance_package.jpg",
       title: "Maintenance Packages",
       icon: "BsFillBox2HeartFill",
       para: "Regular maintenance is the key to keeping your vehicle in top condition. Our maintenance packages offer a comprehensive approach to vehicle care. Whether you need routine oil changes, filter replacements, or other essential services, we have a package that suits your needs and budget.",
@@ -78,7 +78,7 @@ const repairServices = [
     },
     {
       id: 8,
-      src: "/images/services/alignment.jpg",
+      src: "/capital-mech/images/services/alignment.jpg",
       title: "Wheel Alignment",
       icon: "BsAlignMiddle",
       para: "Proper wheel alignment is essential for tire longevity and vehicle handling. Our wheel alignment service ensures that your wheels are correctly aligned, preventing uneven tire wear and improving handling. Whether your vehicle pulls to one side or you've hit a pothole, our certified technicians will align your wheels to perfection.",
@@ -89,7 +89,7 @@ const repairServices = [
     },
     {
       id: 9,
-      src: "/images/services/inspection.jpg",
+      src: "/capital-mech/images/services/inspection.jpg",
       title: "Vehicle Inspections",
       icon: "FcInspection",
       para: "Regular vehicle inspections are essential for safety and reliability. Our inspection services cover comprehensive assessments of your vehicle's components, from brakes to lights. Whether you need a pre-purchase inspection or routine maintenance check, our certified technicians ensure that your vehicle is in optimal condition.",
@@ -100,7 +100,7 @@ const repairServices = [
     },
     {
       id: 10,
-      src: "/images/services/diagnostic.jpg",
+      src: "/capital-mech/images/services/diagnostic.jpg",
       title: "Diagnostic Services",
       icon: "MdOutlinePermDeviceInformation",
       para: "When your vehicle experiences issues or warning lights, our diagnostic services are your solution. Our expert technicians use state-of-the-art diagnostic equipment to identify and resolve problems. We provide you with detailed reports and expert recommendations to keep your vehicle running smoothly.",
@@ -111,7 +111,7 @@ const repairServices = [
     },
     {
       id: 11,
-      src: "/images/services/hvac.jpg",
+      src: "/capital-mech/images/services/hvac.jpg",
       title: "HVAC Service",
       icon: "MdHvac",
       para: "A properly functioning HVAC system is essential for comfortable driving. Our HVAC service covers air conditioning and heating system repairs. Whether you're facing cooling issues in the summer or heating problems in the winter, our certified technicians will diagnose and repair your HVAC system for a comfortable and enjoyable ride.",
@@ -122,7 +122,7 @@ const repairServices = [
     },
     {
       id: 12,
-      src: "/images/services/lights.jpg",
+      src: "/capital-mech/images/services/lights.jpg",
       title: "Lighting and Accessories",
       icon: "FaLightbulb",
       para: "Proper lighting is crucial for vehicle safety and visibility. Our lighting and accessories services cover everything from headlight and taillight replacements to custom lighting upgrades. Whether you need a quick bulb replacement or want to enhance your vehicle's appearance, our certified technicians have you covered.",
@@ -133,7 +133,7 @@ const repairServices = [
     },
     {
       id: 13,
-      src: "/images/services/cooling_system.jpg",
+      src: "/capital-mech/images/services/cooling_system.jpg",
       title: "Cooling System Maintenance",
       icon: "FaThermometerHalf",
       para: "Your vehicle's cooling system is vital for engine temperature control. Our cooling system maintenance service covers radiator repairs, coolant flushes, and thermostat replacements. Whether your engine is running too hot or you need preventive maintenance, our certified technicians will ensure your cooling system is in top condition.",
@@ -144,7 +144,7 @@ const repairServices = [
     },
     {
       id: 14,
-      src: "/images/services/battery.jpg",
+      src: "/capital-mech/images/services/battery.jpg",
       title: "Battery Care",
       icon: "BiSolidCarBattery",
       para: "A reliable battery is essential for starting your vehicle. Our battery care service includes battery testing, charging, and replacement. Whether your vehicle struggles to start or you want to prevent unexpected breakdowns, our certified technicians will ensure your battery is in excellent condition.",
@@ -155,7 +155,7 @@ const repairServices = [
     },
     {
       id: 15,
-      src: "/images/services/engine.jpg",
+      src: "/capital-mech/images/services/engine.jpg",
       title: "Engine Services",
       icon: "PiEngineFill",
       para: "Your vehicle's engine is the heart of its performance and reliability. Our engine services encompass a wide range of diagnostics, repairs, and maintenance to ensure your engine operates at its best. Whether you're experiencing reduced power, unusual noises, or warning lights on your dashboard, our certified technicians will diagnose and address the issues, restoring your engine's power and efficiency.",
