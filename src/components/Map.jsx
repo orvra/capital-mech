@@ -23,7 +23,7 @@ function Map({ coordinates }) {
   };
 
   const [map, setMap] = useState(/** @type google.maps.Map */ (null));
-  const [mapCenter, setMapCenter] = useState({ lat: 45.4, lng: -75.7 }); // Initial map center
+  const [mapCenter, setMapCenter] = useState({ lat: 45.42, lng: -75.7 }); // Initial map center
 
   useEffect(() => {
     if (
