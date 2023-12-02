@@ -34,7 +34,7 @@ function AppointmentStep3({ formSubmitted, setFormSubmitted }) {
               id="name"
               name="name"
               placeholder="First & Last Name"
-              className="py-1 px-2 w-full bg-white my-0.5"
+              className="py-1 px-2 w-full bg-white my-0.5 border rounded"
               onChange={handleChange}
               value={formData.name}
             />
@@ -43,7 +43,7 @@ function AppointmentStep3({ formSubmitted, setFormSubmitted }) {
               id="email"
               name="email"
               placeholder="Email Address"
-              className="py-1 px-2 w-full bg-white my-0.5"
+              className="py-1 px-2 w-full bg-white my-0.5 border rounded"
               onChange={handleChange}
               value={formData.email}
             />
@@ -52,7 +52,7 @@ function AppointmentStep3({ formSubmitted, setFormSubmitted }) {
               id="number"
               name="number"
               placeholder="Phone Number"
-              className="py-1 px-2 w-full bg-white my-0.5 mb-4"
+              className="py-1 px-2 w-full bg-white my-0.5 mb-4 border rounded"
               onChange={handleChange}
               value={formData.number}
             />
@@ -64,7 +64,7 @@ function AppointmentStep3({ formSubmitted, setFormSubmitted }) {
               id="year"
               name="year"
               placeholder="Year"
-              className="py-1 px-2 w-full bg-white my-0.5"
+              className="py-1 px-2 w-full bg-white my-0.5 border rounded"
               onChange={handleChange}
               value={formData.year}
             />
@@ -73,7 +73,7 @@ function AppointmentStep3({ formSubmitted, setFormSubmitted }) {
               id="brand"
               name="brand"
               placeholder="Brand"
-              className="py-1 px-2 w-full bg-white my-0.5"
+              className="py-1 px-2 w-full bg-white my-0.5 border rounded"
               onChange={handleChange}
               value={formData.brand}
             />
@@ -82,7 +82,7 @@ function AppointmentStep3({ formSubmitted, setFormSubmitted }) {
               id="model"
               name="model"
               placeholder="Model"
-              className="py-1 px-2 w-full bg-white my-0.5"
+              className="py-1 px-2 w-full bg-white my-0.5 border rounded"
               onChange={handleChange}
               value={formData.model}
             />
