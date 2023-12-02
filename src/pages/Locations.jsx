@@ -22,9 +22,10 @@ function Locations({
     libraries,
   });
 
-  const [coordinates, setCoordinates] = useState([
-    { lat: location.lat, lng: location.lng },
-  ]);
+  const [coordinates, setCoordinates] = useState({
+    lat: location.lat,
+    lng: location.lng,
+  });
   const [locationList, setLocationList] = useState(locations);
 
   console.log("goku", coordinates);
@@ -32,7 +33,7 @@ function Locations({
     // Sort locations by proximity when coordinates change
     const sortedLocations = sortLocationsByProximity(locationList, coordinates);
     setLocationList(sortedLocations);
-  }, [coordinates[0]]); // Run when coordinates change
+  }, [coordinates]); // Run when coordinates change
 
   return (
     <div>
@@ -42,7 +43,7 @@ function Locations({
       />
       {isLoaded && <SearchBar setCoordinates={setCoordinates} />}
       <div className="max-w-[1400px] mx-auto md:flex md:flex-row-reverse">
-        {!isLoaded ? <h1>Loading...</h1> : <Map coordinates={coordinates[0]} />}
+        {!isLoaded ? <h1>Loading...</h1> : <Map coordinates={coordinates} />}
 
         <div className="overflow-y-auto md:h-[700px] md:w-1/3 lg:w-1/3">
           <LocationsList

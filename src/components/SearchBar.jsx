@@ -1,6 +1,6 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
@@ -39,6 +39,15 @@ function SearchBar({ setCoordinates }) {
     e.preventDefault();
     setCoordinates(tempCoordinates);
     console.log("yajib", tempCoordinates);
+  };
+
+  const buttonRef = useRef(null); // Ref for the button element
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      buttonRef.current.click(); // Programmatically trigger button click
+    }
   };
 
   return (
@@ -82,6 +91,7 @@ function SearchBar({ setCoordinates }) {
                       id: "search-bar",
                       className:
                         "h-12 px-2 bg-transparent outline-none flex-1 w-full",
+                      onKeyUp: handleKeyPress,
                     })}
                   />
                   <div className="autocomplete-dropdown-container absolute rounded-md py-1 max-w-[350px]">
@@ -120,8 +130,10 @@ function SearchBar({ setCoordinates }) {
               )}
             </PlacesAutocomplete>
             <button
+              ref={buttonRef}
               className="rounded-full bg-white text-white p-3 border-2 border-gray-600 translate-x-1"
               type="search"
+              htmlFor="search-bar"
             >
               <FiSearch className="groy" />
             </button>

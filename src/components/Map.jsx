@@ -23,6 +23,17 @@ function Map({ coordinates }) {
   };
 
   const [map, setMap] = useState(/** @type google.maps.Map */ (null));
+  const [mapCenter, setMapCenter] = useState({ lat: 45.4, lng: -75.7 }); // Initial map center
+
+  useEffect(() => {
+    if (
+      coordinates &&
+      typeof coordinates.lat === "number" &&
+      typeof coordinates.lng === "number"
+    ) {
+      setMapCenter(coordinates);
+    }
+  }, [coordinates]);
 
   return (
     <div className="map max-w-[1400px] mx-auto">
@@ -31,8 +42,8 @@ function Map({ coordinates }) {
       ) : (*/}
       <GoogleMap
         mapContainerClassName="map-container"
-        center={{ lat: 44.53, lng: -77.49 }}
-        zoom={6}
+        center={mapCenter}
+        zoom={11}
         options={{ mapId: "96eeec0a916300a8" }}
       >
         {locations.map(({ lat, lng, address, index, title, number }, i) => (
